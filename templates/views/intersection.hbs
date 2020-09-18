@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Intersection of DFAs</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>{{message}}</p>
+        <form>
+            <label for="dfa1" class="dfa-label">DFA 1</label>
+            <br />
+            <textarea id="textbox-1" placeholder="Code for first DFA" name="dfa1" rows="4" cols="75" required="true"></textarea>
+            <br />
+            <label for="dfa2" class="dfa-label">DFA 2</label>
+            <br />
+            <textarea id="textbox-2" placeholder="Code for second DFA" name="dfa2" rows="4" cols="75" required="true"></textarea>
+            <br />
+            <button>Calculate</button>
+        </form>
+        <label id="message-1" for="results" class="dfa-label"></label>
+        <textarea id="textbox-3" placeholder="Loading..." name="results" rows="4" cols="75" style="visibility: hidden;"></textarea>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
